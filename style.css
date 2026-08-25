@@ -4,11 +4,15 @@ body{
 
 section{
     text-align: center;
-    
+ 
 }
 
 h1{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
 }
 
 #acceuil h1+p{
@@ -16,25 +20,34 @@ h1{
     
 }
 
-#apropos h1+p {
+.description {
     background-color: white;
-    margin: 15px auto;
-    padding: 10px;
-    box-shadow: 0px 0px 5px black;
+    width: 60%;
+    margin: 10px auto;
+    padding: 7px;
+    box-shadow: 0px 0px 3px black;
 }
 
-.prog div, .web div, .reseaux div {
-    background-color: white;
-    font-size: 25px;
-    width: 90px;
-    margin: 15px auto;
-    padding: 10px;
-    box-shadow: 0px 0px 5px black;
+.description span {
+    display: block;
+    max-width: 800px;
+    margin: 5px auto;
 }
 
 .web, .prog, .reseaux{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prog div, .web div, .reseaux div {
+    background-color: white;
+    font-size: 18px;
+    width: 70px;
+    margin: 5px;
+    padding: 7px;
+    box-shadow: 0px 0px 3px black;
 }
 
 /* Adaptation pour les téléphones */
