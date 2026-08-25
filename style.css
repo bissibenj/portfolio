@@ -8,20 +8,107 @@ section{
 }
 
 h1{
-    color: blueviolet;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 #acceuil h1+p{
     color: rgb(223, 138, 33);
+    
 }
-#competences, #projets, #contacts{
+
+#apropos h1+p {
     background-color: white;
-    font-size: 25px;
-    width: 600px;
     margin: 15px auto;
     padding: 10px;
     box-shadow: 0px 0px 5px black;
 }
 
+.prog div, .web div, .reseaux div {
+    background-color: white;
+    font-size: 25px;
+    width: 90px;
+    margin: 15px auto;
+    padding: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.web, .prog, .reseaux{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Adaptation pour les téléphones */
+@media (max-width: 600px) {
+
+    /* Toutes les sections */
+    section {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /* Les titres */
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    /* Texte d'accueil */
+    #accueil h1 {
+        font-size: 20px;
+    }
+
+    #accueil p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Compétences */
+    .prog,
+    .web {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Les carrés des compétences */
+    .prog div,
+    .web div {
+        width: auto;
+        min-width: 70px;
+        font-size: 18px;
+        margin: 5px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    /* Projets */
+    #projets p {
+        font-size: 16px;
+    }
+
+    /* Réseaux sociaux */
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #contacts div {
+        width: auto;
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+}
 
