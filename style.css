@@ -8,16 +8,26 @@ section{
 }
 
 h1{
-    font-size: 20px;
+    font-size: 40px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 26px;
 }
 
-#acceuil h1+p{
+#acceuil h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+#acceuil h1+h3{
     color: rgb(223, 138, 33);
     
+}
+
+#acceuil span {
+    font-size: 20px;
+    padding: 150px;
 }
 
 .description {
@@ -43,11 +53,22 @@ p {
 
 .prog div, .web div, .reseaux div {
     background-color: white;
-    font-size: 18px;
-    width: 70px;
+    font-size: 23px;
+    width: 80px;
     margin: 5px;
     padding: 7px;
     box-shadow: 0px 0px 3px black;
+}
+
+hr {
+    color: whitesmoke;
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    margin: 10px auto;
+    padding: 40px;
 }
 
 /* Adaptation pour les téléphones */
