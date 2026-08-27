@@ -26,10 +26,11 @@ p {
 }
 
 #acceuil span {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+    font-size: 25px;
+    display: block;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
 }
 
 .description {
@@ -42,6 +43,8 @@ p {
 }
 
 .description span {
+    font-size: 25px;
+    text-align: start;
     display: block;
     max-width: 800px;
     margin: 5px auto;
