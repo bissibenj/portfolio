@@ -1,20 +1,25 @@
+/* toute la page */
 body{
     background-color: whitesmoke;
 }
 
+/* Tous les sections */
 section{
     text-align: center;
  
 }
 
+/* Tous les titres h1 */
 h1{
     font-size: 40px;
 }
 
+/* Tous les p */
 p {
     font-size: 26px;
 }
 
+/* Prenom, nom et Profil d'etude */
 #acceuil h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: xx-large;
@@ -25,6 +30,7 @@ p {
     
 }
 
+/* Texte d'acceuil */
 #acceuil span {
     font-size: 25px;
     display: block;
@@ -33,6 +39,7 @@ p {
     text-align: left;
 }
 
+/* A Propos de moi */
 .description {
     background-color: white;
     width: 60%;
@@ -50,6 +57,7 @@ p {
     margin: 5px auto;
 }
 
+/* Mes competences et mes reseaux */
 .web, .prog, .reseaux{
     display: flex;
     flex-direction: row;
@@ -68,11 +76,17 @@ p {
     border-radius: 15px;
 }
 
+.prog div:hover, .web div:hover, .reseaux div:hover {
+    color: white;
+    background-color: burlywood;
+}
+
 a {
     color: black;
     text-decoration: none;
 }
 
+/* Pied de page */
 hr {
     color: whitesmoke;
     margin-top: 100px;
@@ -112,17 +126,19 @@ footer {
         font-size: 20px;
     }
 
-    #accueil p {
+    #accueil span {
         font-size: 16px;
         line-height: 1.5;
     }
 
     /* A propos */
     .description {
-        max-width: 90%;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto 20px;
         font-size: 15px;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
     }
 
     /* Compétences */
