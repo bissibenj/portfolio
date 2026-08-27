@@ -121,6 +121,10 @@ footer {
         font-size: 16px;
     }
 
+    p {
+        font-size: 16px;
+    }
+
     /* Texte d'accueil */
     #accueil h1 {
         font-size: 20px;
